@@ -19,5 +19,21 @@ Sistema web simples para gerenciamento de pessoas e cálculo de salários, desen
 - Bootstrap 5 para o front-end
 - Npgsql (driver .NET para PostgreSQL)
 
-## 📦 Estrutura do Projeto
+## Como Rodar o Projeto
 
+1. Clone este repositório para o seu ambiente local.
+2. Abra o projeto no Visual Studio.
+3. Abra o arquivo `Web.config` e configure a string de conexão do banco de dados.
+4. Execute o projeto para visualizar a aplicação.
+
+## Como Importar o Banco de Dados
+
+Para importar o banco de dados no seu ambiente local, siga os passos abaixo:
+
+1. Navegue até a pasta `banco` do projeto.
+2. Abra o terminal ou o pgAdmin.
+
+### Usando o terminal:
+- Execute o comando abaixo no terminal para importar o arquivo `.sql` para o seu banco de dados PostgreSQL:
+  ```bash
+  psql -U postgres -d postgres -f banco/projeto_rh.sql
